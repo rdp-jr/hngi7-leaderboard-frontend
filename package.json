@@ -1,0 +1,31 @@
+{
+  "name": "hng-leaderboard",
+  "version": "1.0.0",
+  "description": "HNGi7 Leaderboard",
+  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "axios": "^0.19.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "material-table": "^1.62.0",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdp-jr/hngi7-leaderboard-frontend.git"
+  },
+  "author": "Roberto Principio Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdp-jr/hngi7-leaderboard/issues"
+  },
+  "homepage": "https://github.com/rdp-jr/hngi7-leaderboard#readme"
+}

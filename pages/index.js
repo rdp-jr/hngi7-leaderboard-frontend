@@ -15,12 +15,12 @@ function Index({data}) {
   
   for (let i = 0; i < data.length; i++) {
     
-    console.log(data[i]['points'])
+    // console.log(data[i]['points'])
 
     if (!(topRanks.includes(data[i]['points']))) {
       if (topRanks.length < 3) {
         topRanks.push(data[i]['points'])
-        console.log('pushed!')
+        // console.log('pushed!')
       } else {
         break
       }
@@ -28,7 +28,7 @@ function Index({data}) {
 
   }
 
-  console.log(topRanks)
+  // console.log(topRanks)
 
 
   const style = {
@@ -103,7 +103,7 @@ function Index({data}) {
           // message += '%0a@hnginternship #hng #hnginternship #programming'
           message += '@hnginternship '
           message += '&hashtags=hng%20%2Chnginternship%20%2Cprogramming%20%2Ctech'
-          console.log(message)
+          // console.log(message)
           // const finalMsg = message.replace(' ', '%20')
           document.location.href = `https://twitter.com/intent/tweet?text=${message}`
         }
@@ -140,8 +140,8 @@ function Index({data}) {
 
 
 Index.getInitialProps = async function() {
-  const API_URL = 'http://localhost:5000/records'
-  const res = await fetch('http://localhost:5000' + '/records')
+  const API_URL = 'https://agile-cliffs-64902.herokuapp.com/records'
+  const res = await fetch(API_URL)
   const data = await res.json()
   return {
     data
